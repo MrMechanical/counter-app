@@ -36,13 +36,23 @@
 <body>
   <div id="demo">
     <h1>counter-app</h1>
-    <!-- this is going to do whatever the tag's defaults are -->
+    <!-- Default usage -->
     <h2>Default</h2>
     <counter-app></counter-app>
+  
+    <!-- Slot usage -->
     <h2>Slot usage</h2>
-    <counter-app data-accent="2" data-primary="17"><div>Sample slot content</div></counter-app>
+    <counter-app data-accent="2" data-primary="17">
+      <div>Sample slot content</div>
+    </counter-app>
+  
+    <!-- Property usage -->
     <h2>Property usage</h2>
     <counter-app id="example" title="Sample property title"></counter-app>
+  
+    <!-- Enhanced example with initial count and step -->
+    <h2>With initial count and step</h2>
+    <counter-app count="5" step="2"></counter-app>
   </div>
   <script type="module" src="./src/counter-app.js"></script>
 
